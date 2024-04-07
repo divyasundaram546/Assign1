@@ -1,0 +1,57 @@
+a {
+  text-decoration: none;
+}
+
+/*For width greater than 768px*/
+
+ul.dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+
+a.dropdown:hover ul.dropdown-menu {
+  display: block;
+}
+
+li.dropdown-item:hover {
+  background-color: black;
+  color: white;
+}
+
+#ham,
+#hamicon,
+#closeicon {
+  display: none;
+}
+
+/*For width less than 768px*/
+
+@media screen and (max-width: 768px) {
+  #ham {
+    transition: 0.5s;
+    height: 100%;
+    position: fixed;
+    top: 14%;
+    right: 0;
+    background-color: black;
+    font-size: 20px;
+
+    border: 1px black solid;
+  }
+  #hamicon {
+    display: block;
+  }
+  a.dropdown-item {
+    color: white;
+  }
+  a.dropdown-item:hover {
+    background-color: white;
+    color: black;
+  }
+  .nav1,
+  .logout1,
+  #closeicon {
+    display: none;
+  }
+}
